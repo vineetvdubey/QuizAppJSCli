@@ -24,8 +24,7 @@ const showInstructions = () => {
 }
 
 const showScore = (correctAnswers, totalQuestions) => {
-  console.log();
-  console.log(`Your Score: ${correctAnswers}/${totalQuestions}`);
+  console.log(`\nYour Score: ${correctAnswers}/${totalQuestions}`);
   console.log('Thank you for participating !!');
 }
 
@@ -37,15 +36,15 @@ const runQuiz = (questions) => {
     const {question, options, answer: expectedAnswer} = questionObj;
     console.log(`\nQuestion ${questionNumber}`);
     console.log(question);
-    for (let [optionKey, optionValue] of Object.entries(options)) {
+    for (const [optionKey, optionValue] of Object.entries(options)) {
       console.log(`${optionKey}:\t${optionValue}`);
     }
-    let actualAnswer = readLineSync.question('Your answer: ');
+    const actualAnswer = readLineSync.question('Your answer: ');
     if (actualAnswer === expectedAnswer) {
       correctAnswers += 1;
       console.log('Correct answer!');
     } else {
-      console.log('Incorrect Answer. The correct option is:', expectedAnswer);
+      console.log('Incorrect answer. The correct option is:', expectedAnswer);
     }
     questionNumber += 1;
   }
@@ -56,7 +55,7 @@ const main = () => {
   const quizSource = getQuizSource(quizSourcePath);
   const {title, description, questions} = quizSource;
   showWelcomeMessage(title, description);
-  let correctAnswers = runQuiz(questions);
+  const correctAnswers = runQuiz(questions);
   showScore(correctAnswers, questions.length);
 }
 
