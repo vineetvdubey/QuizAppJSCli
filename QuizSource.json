@@ -1,0 +1,56 @@
+{
+    "title": "Geography Quiz",
+    "description": "Test your knowledge of Capital Cities of the World!",
+    "questions": [
+        {
+            "question": "What is the capital of Turkmenistan?",
+            "options": {
+                "1": "Dushanbe",
+                "2": "Ashgabat",
+                "3": "Kabul",
+                "4": "Tajikistan"
+            },
+            "answer": "2"
+        },
+        {
+            "question": "What is the capital of Lesotho?",
+            "options": {
+                "1": "Maseru",
+                "2": "Mbabane",
+                "3": "Maputo",
+                "4": "Qacha's Nek"
+            },
+            "answer": "1"
+        },
+        {
+            "question": "What is the capital of Afghanistan?",
+            "options": {
+                "1": "Kabul",
+                "2": "Islamabad",
+                "3": "Baghdad",
+                "4": "Afghan"
+            },
+            "answer": "1"
+        },
+        {
+            "question": "What is the capital of Australia?",
+            "options": {
+                "1": "Melbourne",
+                "2": "Sydney",
+                "3": "Canberra",
+                "4": "Perth"
+            },
+            "answer": "3"
+        },
+        {
+            "question": "What is the capital of Portugal?",
+            "options": {
+                "1": "Sintra",
+                "2": "Porto",
+                "3": "Seville",
+                "4": "Lisbon"
+            },
+            "answer": "4"
+        }
+    ]
+}
