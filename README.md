@@ -1,4 +1,4 @@
-# Quiz App NodeJS CLI [DEMO](https://replit.com/@VineetDubey/QuizAppJSCli?lite=1&outputonly=1)
+# Quiz App NodeJS CLI - <a href="https://replit.com/@VineetDubey/QuizAppJSCli?lite=1&outputonly=1" target="_blank">DEMO</a>
 
 This a command-line based multiple-choice quiz application.
 
