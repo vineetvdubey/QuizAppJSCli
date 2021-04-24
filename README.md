@@ -2,7 +2,7 @@
 
 This a command-line based multiple-choice quiz application.
 
-The source questions for the quiz is separated out in a JSON file, so that the json url can be just replaced with a new one and we will get a completely new quiz with the same code, as long as the expected json structure is followed.
+The source questions for the quiz is separated out in a JSON file, so that the JSON URL can be just replaced with a new one and we will get a completely new quiz with the same code, as long as the expected json structure is followed.
 ```javascript
 {
     "title": "Geography Quiz",
