@@ -5,7 +5,7 @@ const getQuizSource = (path) => {
   try {
     const quizSource = require(path);
     return quizSource;
-  } catch ( err ) {
+  } catch (err) {
     console.log('[ERROR] Missing Quiz Source JSON');
     process.exit(1)
   }
@@ -19,8 +19,8 @@ const showWelcomeMessage = (title, description) => {
 
 const showInstructions = () => {
   console.log('\nEach question will have 4 options with exactly 1 correct answer.');
-  console.log('Please enter the correct option [1, 2, 3 or 4] when prompted.\n');
-  readLineSync.question('Press any key to continue...\n');
+  console.log('Please input the correct option [1, 2, 3 or 4] when prompted.\n');
+  readLineSync.question('Press enter key to continue...\n');
 }
 
 const showScore = (correctAnswers, totalQuestions) => {
@@ -33,7 +33,7 @@ const runQuiz = (questions) => {
   let correctAnswers = 0;
   let questionNumber = 1;
   for (const questionObj of questions) {
-    const {question, options, answer: expectedAnswer} = questionObj;
+    const { question, options, answer: expectedAnswer } = questionObj;
     console.log(`\nQuestion ${questionNumber}`);
     console.log(question);
     for (const [optionKey, optionValue] of Object.entries(options)) {
@@ -53,7 +53,7 @@ const runQuiz = (questions) => {
 
 const main = () => {
   const quizSource = getQuizSource(quizSourcePath);
-  const {title, description, questions} = quizSource;
+  const { title, description, questions } = quizSource;
   showWelcomeMessage(title, description);
   const correctAnswers = runQuiz(questions);
   showScore(correctAnswers, questions.length);
